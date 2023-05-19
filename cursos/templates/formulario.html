@@ -1,0 +1,7 @@
+<form method="POST">
+    {% csrf_token %}
+    n1: <input type="text" name="n1" id="n1"><br>
+    n2: <input type="text" name="n2" id="n2"><br>
+    <input type="submit" value="sumar">
+    {{ result }}
+</form>

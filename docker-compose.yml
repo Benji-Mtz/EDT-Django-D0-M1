@@ -1,0 +1,13 @@
+version: '2'
+services:
+  postgres:
+    image: 'postgres:latest'
+    restart: always
+    volumes:
+      - './postgres_data:/var/lib/postgresql/data'
+    environment:
+      - POSTGRES_USER=root
+      - POSTGRES_PASSWORD=root
+      - POSTGRES_DB=edteam_db
+    ports:
+      - '5432:5432'
