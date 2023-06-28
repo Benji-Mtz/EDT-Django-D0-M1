@@ -40,6 +40,7 @@ def cursos_api(request):
 def show_form(req):
     result = 0
     if req.method == 'POST':
+        # Siempre son str hay que pasarlo a int
         n1 = int(req.POST['n1'])
         n2 = int(req.POST['n2'])
         

@@ -1,5 +1,20 @@
 # Primeros pasos en Django
 
+## Creando un proyecto nuevo de Django
+
+```sh
+λ python3 -m venv .env
+λ source .env/bin/activate
+λ (.env) pip3 install -r requirements.txt
+λ (.env) django-admin startproject startapp . #crea la carpeta startapp/ y el archivo manage.py
+```
+Como se ha creado un archivo `manage.py` es posible utilizarlo en lugar de usar el `django-admin`, por ejemplo:
+
+```sh
+λ (./root/.env)
+λ (./root/.env) python manage.py runserver
+http://127.0.0.1:8000/
+```
 ## Configurando una nueva base de datos, segun nuestro docker
 
 ```sh
@@ -51,4 +66,3 @@ Si ya teniamos las migraciones con sqlite, requerimos rehacer estas para postgre
 λ python manage.py runserver
 ```
 Ahora podemos ir a `http://127.0.0.1:8000/admin/` y hacer el crud de la data
-
