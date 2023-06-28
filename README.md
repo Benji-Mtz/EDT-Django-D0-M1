@@ -5,6 +5,7 @@
 ```sh
 λ python3 -m venv .env
 λ source .env/bin/activate
+λ (.env) pip3 freeze > requirements.txt
 λ (.env) pip3 install -r requirements.txt
 λ (.env) django-admin startproject startapp . #crea la carpeta startapp/ y el archivo manage.py
 ```
